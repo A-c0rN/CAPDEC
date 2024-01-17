@@ -108,3 +108,6 @@ If you're running the compiled binary.
 ## Known Bugs:
 2. There is a bug that causes large text messages to fail to send to Discord Correctly.
 5. The Timestamps for alert generation can be somewhat crazy, the reason for this has to be with the conversion from UTC to Localtime.
+
+
+###### Copyright © 2024 MissingTextures Software
