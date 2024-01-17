@@ -94,17 +94,13 @@ If you're running the compiled binary.
 - [x] Automatic Alert Description based on the SAME Headers
 - [x] Customized Headers, designed to sound like old CRS Headers from the NWS. (Only if Specified)
 - [x] Discord Alert Logging
-- [x] Active Support and updates
 - [x] Alert filtering and Verification
-- [x] Character Generators (Raspberry Pi Only)
-- [x] Cross-Platform support
-- [x] Licenses to cover specific needs at a low price
 - [x] WAV, MP3, and Base64 Encoded Audio Support
 - [x] CAP XML and Alert Audio File Logging
 ## Working on:
 - [ ] Web Interface
 ## To Be Added:
-- [ ] Raw EAS Decoding (Full ENDEC support)
+- [ ] Raw EAS Decoding (Full ENDEC support) [See ASMARA](https://github.com/A-c0rN/ASMARA)
 
 \*Callsigns default to "IPAWSCAP" and "NOAA/CAP" for the FEMA and NWS Servers, respectively.
 
