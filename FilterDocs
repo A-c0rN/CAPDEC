@@ -1,0 +1,54 @@
+Alright, so the filters will look really goof, so here's an explanation on how they even do...
+
+Here's a filter:
+
+        {
+            "Name": "National Level",
+            "Originators":[
+                "PEP", 
+                "CIV"
+            ],
+            "EventCodes": [
+                "EAN",
+                "EAT",
+                "NPT"
+            ],
+            "SameCodes":[
+                "*"
+            ],
+            "CallSigns":[
+                "*"
+            ],
+            "Action": "Relay:Forced"
+        },
+
+To explain this fiter, We have to look at the basics:
+Name, Originators, EventCodes, SameCodes, CallSigns, Action.
+
+           Name: The name of the filter, Human readable. This will only be used to log/print the matching filters.
+    Originators: The matching Originator Codes (EAN, PEP, CIV, WXR, EAS) To trigger the filter by Originator.
+     EventCodes: The matching Event Codes to trigger the filter.
+      SameCodes: The SAME Code (With subdivision) that will trigger the filter.
+      CallSigns: Optional, Special Callsigns (E.G. Filter out ERN/JON as log only)
+         Action: What the filter will do in response to activation.
+
+I think most of that is self-explanitory, but the Action needs more definition:
+
+    Available Actions:
+        Relay, Ignore, Manual (Manual not implemented yet)
+    Available Action Defs:
+        Forced, Now, <Number> Log
+
+The Format is "Action:Def" in which you tell the ENDEC if you want to relay or not, and what to do and when after that.
+E.G. "Relay:Now" Relays the alert immediately after catching. Any Ignore action wil completely ignore the alert, except
+Ignore:Log, which will Log the Reciept.
+An Action with a number in the DEF slot will treat that as a timer in seconds, up to 1 hour (3600 Seconds):
+E.G. "Relay:60" will wait 60 seconds (1 Minute) before relaying the alert.
+Note, Please do not set a timer on an Ignore, as this can and will cause filter issues. Use Manual Instead (When implemented).
+
+Important: The character "*" is used as a wildcard in the "Originators", "EventCodes", "SameCodes", and "CallSigns" areas.
+Using this character will cause the filter to disreguard that section, and treat it as a matched filter.
+E.G. If you set "CallSigns" to "*", or have "*" ANYWHERE in "CallSigns", "CallSigns" will always be matched.
+
+That's pretty much the basics of the new filter system.
+ok thx bye 

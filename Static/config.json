@@ -1,0 +1,52 @@
+{
+    "Status": [
+        "Actual", 
+        "Exercise", 
+        "System", 
+        "Test"
+    ], 
+    "URLs": [
+        "https://cap.gwes-eas.network/alerts.xml",
+        "https://cap.gwes-eas.network/dev/alerts.xml",
+        "https://wjon.neocities.org/alert.xml", 
+        "https://wjon.neocities.org/WJONCAPEBSTEST.xml",
+        "http://www.24point14.net:8000/MEMECAP.xml",
+        "https://www.wdfaradio.com/cap/alert.xml"
+    ],
+    "NWSLocations": [
+        "ARC007",
+        "WAC061",
+        "NEC109",
+        "IAC193",
+        "WAC073",
+        "PAC027",
+        "PAC081",
+        "KYC131",
+        "VAC059",
+        "MIC077",
+        "MSC033",
+        "GAC051",
+        "NYC005"
+        ],
+    "ExportEnable": false,
+    "ExportFolder": "/tmp",
+    "ExportToENDEC": false,
+    "ENDECOverrideFolder": "/tmp/ENDEC/Override",
+    "PollTime": 15,
+    "IPAWS": true,
+    "NWS": false,
+    "BlockUnknownEventCodes": true,
+    "Lang": "en-US",
+    "ENCOrg": "EAS",
+    "AudioLevels": -9,
+    "ENCWait": "None",
+    "ENCCall": "CAPDECDR",
+    "ENCTTS": "flite",
+    "ENCNWS": false,
+    "ENCRWTAUD": false,
+    "ENCFREQ": 24000,
+    "LOGEnbl": true,
+    "LOGAud": true,
+    "LOGIcon": "https://images.squarespace-cdn.com/content/v1/54f72a51e4b0c0bde45e83cb/1454019989070-2V2TIT9S29MFEIU5PV17/CAP+Logo",
+    "WebHooks": []
+}

@@ -1,0 +1,61 @@
+{
+    "setFilters":[
+        {
+            "Name": "National Level",
+            "Originators":[
+                "PEP", 
+                "CIV"
+            ],
+            "EventCodes": [
+                "EAN",
+                "EAT",
+                "NPT"
+            ],
+            "SameCodes":[
+                "*"
+            ],
+            "CallSigns":[
+                "*"
+            ],
+            "Action": "Relay:Forced"
+        },
+        {
+            "Name": "Local Alerts",
+            "Originators":[
+                "*"
+            ],
+            "EventCodes": [
+                "*"
+            ],
+            "SameCodes":[
+                "05000",
+                "05007",
+                "05015",
+                "05033",
+                "05047",
+                "05131",
+                "05147"
+            ],
+            "CallSigns":[
+                "*"
+            ],
+            "Action": "Relay:Now"
+        },        
+        {
+            "Name": "Non-Local Alerts",
+            "Originators":[
+                "*"
+            ],
+            "EventCodes": [
+                "*"
+            ],
+            "SameCodes":[
+                "*"
+            ],
+            "CallSigns":[
+                "*"
+            ],
+            "Action": "Ignore:Now"
+        }
+    ]
+}
