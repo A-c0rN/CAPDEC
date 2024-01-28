@@ -41,7 +41,7 @@
     "AudioLevels": -9,
     "ENCWait": "None",
     "ENCCall": "CAPDECDR",
-    "ENCTTS": "flite",
+    "ENCTTS": "balcon",
     "ENCNWS": false,
     "ENCRWTAUD": false,
     "ENCFREQ": 24000,

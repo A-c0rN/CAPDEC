@@ -1105,6 +1105,11 @@ def TTSGen(voice, message, ident):
         system(
             f'espeak -s 150 -v EN-US -w "Output/TTS_{ident}.wav" "{str(message)}"'
         )
+    elif voice.lower() == "balcon":
+        print(f"[AUDIO] Using Balcon SAPI TTS Voice.")
+        system(
+            f'balcon -w "Output/TTS_{ident}.wav" -t "{str(message)}"'
+        )
     else:
         print(f"[AUDIO] Using Default TTS Voice.")
         system(
