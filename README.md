@@ -1,8 +1,21 @@
-# CAP-Decoder Thingy.
+# CAP-Decoder (Windows)
+
+This is a version of A-c0rN's legacy CAP Decoder which is known to be working on Windows. A list of differences and required utilities are available just below this message. - Arie
 
 Please note, this software is written HORRIBLY and shouldn't be used for any circumstances ever.
+Don't blame me when it doesn't work, I stopped working on it 2 years ago, and everyone else 3 years. - A-c0rN (original creator)
 
-Don't blame me when it doesn't work, I stopped working on it 2 years ago, and everyone else 3 years.
+## Setting up Windows compatibility:
+
+This version of A-c0rN's CAPDEC natively supports Balabolka, a SAPI 5 Text-to-Speech utility designed for Windows, in order to generate the TTS audio messages for CAP alerts without a provided audio file. In order for this to work, this requires Balabolka's Command Line Utility to be within the working directory of the program. 
+
+Follow these steps to get Balabolka's Command Line Utility:
+1. Go to https://www.cross-plus-a.com/bconsole.htm and download the Command Line Utility.
+2. Extract the balcon.zip file.
+3. Copy the balcon.exe file from the folder and paste it into the folder of the CAPDEC (the same folder as capenc3.4py).
+4. Follow the remaining instructions below to set up the CAPDEC.
+
+If you wish to change options for the TTS generation with Balabolka, you can create a file called balcon.cfg and paste your balcon commands in there. (i.e. -n Microsoft David) View Balabolka's official documentation for more information.
 
 ## Initial Setup:
 Installing Dependancies
